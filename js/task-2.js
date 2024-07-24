@@ -6,7 +6,7 @@
 function makeArray(firstArray, secondArray, maxLength) {
   const thierdArray = firstArray.concat(secondArray);
   if (thierdArray.length > maxLength) {
-    thierdArray.slice(0, maxLength);
+    thierdArray.length = maxLength;
   }
   return thierdArray.slice(0, maxLength);
 }
